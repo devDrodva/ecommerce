@@ -1,0 +1,28 @@
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; 
+}
+
+*,
+*::after,
+*::before  {
+   margin: 0;
+   padding: 0;
+   box-sizing: inherit;
+}
+
+body {
+  font-family: 'Poppins';
+  letter-spacing: 1.5px;
+  color: #546A76;
+  background-color: #f0f1f7;
+}
+
+i,
+nav span {
+color: #6669a0;
+}
+
+p span {
+color: #4F517D;
+}
