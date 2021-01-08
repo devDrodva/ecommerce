@@ -6,7 +6,10 @@
 ```
 - src
 - - - - components
-      |- Cart
+      |- Navbar
+      |- - index.js
+      |- - styles.js
+      |-Wrapper
       |- - index.js
       |- - styles.js
 ```
