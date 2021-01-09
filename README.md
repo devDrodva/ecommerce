@@ -6,10 +6,16 @@
 ```
 - src
 - - - - components
+      |- CardList
+      |- - index.js
+      |- - styles.js
+      |- Main
+      |- - index.js
+      |- - styles.js
       |- Navbar
       |- - index.js
       |- - styles.js
-      |-Wrapper
+      |- Wrapper
       |- - index.js
       |- - styles.js
 ```
