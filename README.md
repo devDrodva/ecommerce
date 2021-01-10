@@ -1,14 +1,12 @@
 ### Project Stack
 - React
 - React Router DOM
+- Styled Components
 
 ### Project | Folder Structure 
 ```
 - src
 - - - - components
-      |- CardList
-      |- - index.js
-      |- - styles.js
       |- Main
       |- - index.js
       |- - styles.js
