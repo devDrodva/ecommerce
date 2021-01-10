@@ -1,17 +1,13 @@
 import React from 'react'
-import { StyledMain, StyledWrapperCards, StyledCard } from './style'
+import StyledMain from './styles'
 import Wrapper from '../../components/Wrapper'
+import Collection from '../../components/Collection'
 
 const Home = () => {
   return (
     <Wrapper>
       <StyledMain>
-        <StyledWrapperCards>
-          <StyledCard />
-          <StyledCard />
-          <StyledCard />
-          <StyledCard />
-        </StyledWrapperCards>
+        <Collection />
       </StyledMain>
     </Wrapper>
   )
