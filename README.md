@@ -7,13 +7,34 @@
 ```
 - src
 - - - - components
-      |- Main
+      |- Button
+      |- - index.js
+      |- - styles.js
+      |- Cart
+      |- - index.js
+      |- - styles.js
+      |- Collection
+      |- - index.js
+      |- - styles.js
+      |- CollectionItem
       |- - index.js
       |- - styles.js
       |- Navbar
       |- - index.js
       |- - styles.js
+      |- ShoppingBag
+      |- - index.js
+      |- - styles.js
       |- Wrapper
+      |- - index.js
+      |- - styles.js
+```
+```
+- - - - pages
+      |- Checkout
+      |- - index.js
+      |- - styles.js
+      |- Home
       |- - index.js
       |- - styles.js
 ```

@@ -1,8 +1,8 @@
 import React from 'react'
-import { StyledMain, StyledWrapperCards, StyledCard } from './styles'
-import Wrapper from '../Wrapper'
+import { StyledMain, StyledWrapperCards, StyledCard } from './style'
+import Wrapper from '../../components/Wrapper'
 
-const Main = () => {
+const Home = () => {
   return (
     <Wrapper>
       <StyledMain>
@@ -16,4 +16,4 @@ const Main = () => {
     </Wrapper>
   )
 }
-export default Main
+export default Home
