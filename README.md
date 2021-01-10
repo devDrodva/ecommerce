@@ -1,15 +1,19 @@
 ### Project Stack
 - React
 - React Router DOM
+- Styled Components
 
 ### Project | Folder Structure 
 ```
 - src
 - - - - components
+      |- Main
+      |- - index.js
+      |- - styles.js
       |- Navbar
       |- - index.js
       |- - styles.js
-      |-Wrapper
+      |- Wrapper
       |- - index.js
       |- - styles.js
 ```
