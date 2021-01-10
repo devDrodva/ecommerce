@@ -4,7 +4,6 @@ const StyledCollection = styled.div`
   width: 100%;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
-  column-gap: 25px;
-  row-gap: 25px;
+  gap: 25px;
 `
 export default StyledCollection
