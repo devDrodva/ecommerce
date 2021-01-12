@@ -4,11 +4,11 @@ import CollectionItem from '../CollectionItem/index'
 import SHOP_DATA from '../../data'
 
 const Collection = () => {
-  const [card, setCard] = useState([])
+  const [products, setProducts] = useState([])
 
   const getData = async () => {
     const data = SHOP_DATA
-    setCard(data)
+    setProducts(data)
   }
 
   useEffect(() => {
@@ -17,7 +17,7 @@ const Collection = () => {
 
   return (
     <StyledCollection>
-      {card.map((item) => (
+      {products.map((item) => (
         <CollectionItem key={item.id} item={item} />
       ))}
     </StyledCollection>
