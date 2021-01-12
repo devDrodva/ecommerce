@@ -3,7 +3,8 @@ import styled from 'styled-components'
 export const StyledCollectionItem = styled.div`
   width: 230px;
   height: 350px;
-  display: grid;
+  display: flex;
+  flex-direction: column;
   background-color: #fff;
 `
 export const BackGroundImage = styled.div`
@@ -13,7 +14,9 @@ export const BackGroundImage = styled.div`
   background-size: 230px;
 `
 export const InfoProduct = styled.div`
-  display: grid;
+  padding: 13px;
+  display: flex;
+  flex-direction: column;
   background-color: #fff;
 
   .product-name {

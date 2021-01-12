@@ -7,7 +7,7 @@ const CollectionItem = ({ item }) => {
       <BackGroundImage value={item.imageUrl} />
       <InfoProduct>
         <p className='product-name'>{`'${item.name}'`}</p>
-        <p className='price'>{`$${item.price}`}</p>
+        <p className='price'>${item.price}</p>
       </InfoProduct>
     </StyledCollectionItem>
   )
