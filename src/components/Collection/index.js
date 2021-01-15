@@ -1,5 +1,5 @@
 import React from 'react'
-import {StyledCollection} from './styles'
+import StyledCollection from './styles'
 import CollectionItem from '../CollectionItem/index'
 import SHOP_DATA from '../../data'
 

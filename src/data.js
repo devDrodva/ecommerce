@@ -14,7 +14,7 @@ const SHOP_DATA = [
   {
     id: 25,
     name: 'Formal Red Shirt',
-    imageUrl: 'https://www.maxpixel.net/static/photo/2x/Fashion-Woman-Model-Textile-Fabric-Clothes-Winter-38471331.jpg',
+    imageUrl: 'https://www.maxpixel.net/static/photo/2x/Fashion-Woman-Model-Textile-Fabric-Clothes-Winter-3847131.jpg',
     price: 80,
   },
   {
@@ -50,7 +50,7 @@ const SHOP_DATA = [
   {
     id: 31,
     name: 'Dark Suit',
-    imageUrl: 'https://www.maxpixel.net/static/photo/2x/Male-Man-Clothing-Fashion-Person-People-Shirt-37437405.jpg',
+    imageUrl: 'https://www.maxpixel.net/static/photo/2x/Male-Man-Clothing-Fashion-Person-People-Shirt-3737405.jpg',
     price: 325,
   },
   {
@@ -66,7 +66,7 @@ const SHOP_DATA = [
     price: 25,
   },
   {
-    id: 31,
+    id: 34,
     name: 'Light Suit',
     imageUrl: 'https://www.maxpixel.net/static/photo/2x/Fashion-Shirt-Person-Clothing-People-Male-Man-3737407.jpg',
     price: 25,
