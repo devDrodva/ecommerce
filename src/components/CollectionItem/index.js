@@ -1,15 +1,16 @@
 import React from 'react'
-import { StyledCollectionItem, BackGroundImage, InfoProduct } from './styles'
+import { WrapperItem, ImageProduct, AddButton, InfoProduct } from './styles'
 
 const CollectionItem = ({ item }) => {
   return (
-    <StyledCollectionItem>
-      <BackGroundImage value={item.imageUrl} />
+    <WrapperItem>
+      <ImageProduct img={item.imageUrl} />
+      <AddButton>ADD TO CART</AddButton>
       <InfoProduct>
         <p className='product-name'>{`'${item.name}'`}</p>
         <p className='price'>${item.price}</p>
       </InfoProduct>
-    </StyledCollectionItem>
+    </WrapperItem>
   )
 }
 
