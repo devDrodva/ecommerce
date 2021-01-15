@@ -1,11 +1,12 @@
 import React from 'react'
-import { WrapperItem, ImageProduct, AddButton, InfoProduct } from './styles'
+import AddButton from '../Button/index'
+import { WrapperItem, ImageProduct, InfoProduct } from './styles'
 
 const CollectionItem = ({ item }) => {
   return (
     <WrapperItem>
       <ImageProduct img={item.imageUrl} />
-      <AddButton>ADD TO CART</AddButton>
+      <AddButton />
       <InfoProduct>
         <p className='product-name'>{`'${item.name}'`}</p>
         <p className='price'>${item.price}</p>

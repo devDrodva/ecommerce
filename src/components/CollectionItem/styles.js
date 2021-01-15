@@ -8,22 +8,6 @@ export const ImageProduct = styled.div`
   background-position: center;
 `
 
-export const AddButton = styled.button`
-  display: none;
-  position: absolute;
-  width: 190px;
-  height: 50px;
-  margin-bottom: 90px;
-  padding: 10px;
-  border: 1px solid #4f517d;
-  color: #4f517d;
-  font-weight: bold;
-  :hover {
-    color: #fff;
-    background-color: #4f517d;
-  }
-`
-
 export const InfoProduct = styled.div`
   display: flex;
   flex-direction: column;
@@ -47,11 +31,12 @@ export const WrapperItem = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  :hover ${AddButton} {
-    display: block;
-    visibility: visible;
-  }
   :hover ${ImageProduct} {
     opacity: 50%;
+  }
+
+  &:hover :nth-child(2n) {
+    display: block;
+    visibility: visible;
   }
 `
