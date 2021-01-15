@@ -1,8 +1,16 @@
 import styled from 'styled-components'
 
+export const ImageProduct = styled.div`
+  width: 230px;
+  height: 350px;
+  background: url(${(props) => props.img});
+  background-size: cover;
+  background-position: center;
+`
+
 export const AddButton = styled.button`
-  position: absolute;
   display: none;
+  position: absolute;
   width: 190px;
   height: 50px;
   margin-bottom: 90px;
@@ -34,18 +42,6 @@ export const InfoProduct = styled.div`
   }
 `
 
-export const ImageProduct = styled.div`
-  width: 230px;
-  height: 350px;
-  background-color: #fff;
-  background: url(${(props) => props.img});
-  background-size: cover;
-  background-position: center;
-  :hover {
-    opacity: 50%;
-  }
-`
-
 export const WrapperItem = styled.div`
   display: flex;
   flex-direction: column;
@@ -54,5 +50,8 @@ export const WrapperItem = styled.div`
   :hover ${AddButton} {
     display: block;
     visibility: visible;
+  }
+  :hover ${ImageProduct} {
+    opacity: 50%;
   }
 `
