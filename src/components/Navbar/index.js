@@ -1,12 +1,16 @@
 import React from 'react'
-import { StyledNav, StyledLogo } from './styles'
+import { StyledNav, Logo, ShoppingBagContainer, ShoppingBagSVG } from './styles'
 
 const Nav = () => {
   return (
     <StyledNav>
-      <StyledLogo>
+      <Logo>
         <i className='fab fa-artstation'> </i>
-      </StyledLogo>
+      </Logo>
+      <ShoppingBagContainer>
+        <ShoppingBagSVG />
+        <span className='counter'>0</span>
+      </ShoppingBagContainer>
     </StyledNav>
   )
 }
