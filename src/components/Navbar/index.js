@@ -9,7 +9,7 @@ const Nav = () => {
       </Logo>
       <ShoppingBagContainer>
         <ShoppingBagSVG />
-        <span className='counter'>0</span>
+        <span className='counter'>{0}</span>
       </ShoppingBagContainer>
     </StyledNav>
   )
