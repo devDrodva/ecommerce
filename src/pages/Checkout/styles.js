@@ -9,6 +9,13 @@ export const StyledProfile = styled.section`
   p {
     font-size: 15px;
   }
+
+  hr {
+    height: 1px;
+    border: none;
+    background-color: #d3d3d3;
+    opacity: 0.5;
+  }
 `
 
 export const StyledCheckout = styled.div`
@@ -21,24 +28,27 @@ export const StyledCheckout = styled.div`
 `
 
 export const StyledInfo = styled.div`
-  border-bottom: 3px solid #4f517d;
-
   p {
     font-size: 30px;
     font-weight: normal;
+  }
+
+  hr {
+    height: 1px;
+    border: none;
+    background-color: #546a76;
+    opacity: 0.5;
   }
 `
 
 export const StyledProductDescription = styled.div`
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   padding: 25px 0px;
-  border-bottom: 3px solid #d3d3d3;
 `
-
 export const StyledProductImage = styled.div`
-  width: 80px;
-  height: 125px;
+  width: 100px;
+  height: 100px;
   margin: 0 25px;
   border-radius: 20px;
   background-color: #d3d3d3;
@@ -49,6 +59,7 @@ export const StyledProductCost = styled.div`
   justify-content: space-between;
   width: 75%;
   height: 150px;
+  padding-top: 35px;
   border-radius: 20px;
 
   p {
@@ -60,7 +71,6 @@ export const StyledTotal = styled.div`
   display: flex;
   justify-content: space-between;
   padding: 15px 0px 10px;
-  border-bottom: 3px solid #d3d3d3;
 
   p {
     font-size: 18px;
@@ -99,9 +109,20 @@ export const StyledAddProduct = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 150px;
+  width: 100px;
   height: 25px;
-  border: 1px solid #d3d3d3;
+  margin-left: 50px;
+`
+export const StyledCounter = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 25px;
+  align-content: center;
+  text-align: center;
+  border-top: 1px solid #d3d3d3;
+  border-bottom: 1px solid #d3d3d3;
 `
 
 export const StyledBtnProduct = styled.button`

@@ -12,6 +12,7 @@ import {
   StyledAmountContainer,
   StyledBtnCheckout,
   StyledAddProduct,
+  StyledCounter,
   StyledBtnProduct,
 } from './styles'
 
@@ -22,6 +23,7 @@ const CheckOut = () => {
         <StyledCheckout>
           <StyledInfo>
             <p>Checkout</p>
+            <hr />
           </StyledInfo>
           <StyledProductDescription>
             <StyledProductImage />
@@ -31,13 +33,17 @@ const CheckOut = () => {
                 <StyledBtnProduct>
                   <p>-</p>
                 </StyledBtnProduct>
-                <span>10</span>
+                <StyledCounter>
+                  <span>10</span>
+                </StyledCounter>
                 <StyledBtnProduct>
                   <p>+</p>
                 </StyledBtnProduct>
               </StyledAddProduct>
+              <p>$30</p>
             </StyledProductCost>
           </StyledProductDescription>
+          <hr />
           <StyledTotal>
             <StyledTextContainer>
               <p>Subtotal</p>
@@ -52,6 +58,7 @@ const CheckOut = () => {
               <p className='total-amount'>$192,05</p>
             </StyledAmountContainer>
           </StyledTotal>
+          <hr />
           <StyledBtnCheckout>
             <p>confirm checkout</p>
           </StyledBtnCheckout>
