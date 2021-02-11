@@ -1,13 +1,13 @@
 import React from 'react'
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
-import { CartProvider } from './store/Cart/context'
+import ProductContext from './store/Cart/context'
 import Nav from './components/Navbar/index'
 import Home from './pages/Home/index'
 import CheckOut from './pages/Checkout/index'
 
 function App() {
   return (
-    <CartProvider>
+    <ProductContext>
       <Router>
         <Nav />
         <Switch>
@@ -16,7 +16,7 @@ function App() {
           <CheckOut />
         </Switch>
       </Router>
-    </CartProvider>
+    </ProductContext>
   )
 }
 

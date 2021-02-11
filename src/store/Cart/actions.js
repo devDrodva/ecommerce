@@ -1,6 +1,9 @@
-const addItem = (item) => ({
-  type: 'ADD_ITEM',
-  payload: item,
+export const ADD_PRODUCT = (product) => ({
+  type: 'ADD_PRODUCT',
+  payload: product,
 })
 
-export default addItem
+export const REMOVE_PRODUCT = (productId) => ({
+  type: 'REMOVE_PRODUCT',
+  payload: productId,
+})

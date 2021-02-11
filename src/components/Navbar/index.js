@@ -1,16 +1,26 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import { StyledNav, Logo, ShoppingBagContainer, ShoppingBagSVG } from './styles'
 
-const Nav = () => {
+const Nav = (props) => {
   return (
     <StyledNav>
-      <Logo>
-        <i className='fab fa-artstation'> </i>
-      </Logo>
-      <ShoppingBagContainer>
-        <ShoppingBagSVG />
-        <span className='counter'>{0}</span>
-      </ShoppingBagContainer>
+      <Link to='/'>
+        <Logo>
+          <i className='fab fa-artstation'> </i>
+        </Logo>
+      </Link>
+      <Link to='/checkout'>
+        <ShoppingBagContainer>
+          <ShoppingBagSVG />
+          <span className='counter'>
+            {
+              // eslint-disable-next-line react/destructuring-assignment
+              props.cartItemNumber
+            }
+          </span>
+        </ShoppingBagContainer>
+      </Link>
     </StyledNav>
   )
 }

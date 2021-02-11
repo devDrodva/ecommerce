@@ -1,19 +1,13 @@
 import React from 'react'
 import Wrapper from '../../components/Wrapper'
+import ProductDescription from './productDescription'
 import {
   StyledProfile,
   StyledCheckout,
-  StyledInfo,
-  StyledProductDescription,
-  StyledProductImage,
-  StyledProductCost,
   StyledTotal,
   StyledTextContainer,
   StyledAmountContainer,
   StyledBtnCheckout,
-  StyledAddProduct,
-  StyledCounter,
-  StyledBtnProduct,
 } from './styles'
 
 const CheckOut = () => {
@@ -21,28 +15,9 @@ const CheckOut = () => {
     <Wrapper>
       <StyledProfile>
         <StyledCheckout>
-          <StyledInfo>
-            <p>Checkout</p>
-            <hr />
-          </StyledInfo>
-          <StyledProductDescription>
-            <StyledProductImage />
-            <StyledProductCost>
-              <p>Belted Plaid Blazer</p>
-              <StyledAddProduct>
-                <StyledBtnProduct>
-                  <p>-</p>
-                </StyledBtnProduct>
-                <StyledCounter>
-                  <span>10</span>
-                </StyledCounter>
-                <StyledBtnProduct>
-                  <p>+</p>
-                </StyledBtnProduct>
-              </StyledAddProduct>
-              <p>$30</p>
-            </StyledProductCost>
-          </StyledProductDescription>
+          <p className='checkout'>Checkout</p>
+          <hr className='hr-checkout' />
+          <ProductDescription />
           <hr />
           <StyledTotal>
             <StyledTextContainer>

@@ -1,9 +1,39 @@
-import React, { useState, createContext } from 'react'
+import React, { useReducer, createContext } from 'react'
+import { ADD_PRODUCT, REMOVE_PRODUCT } from './actions'
+import ProductReducer from './reducers'
 
-export const CartContext = createContext(null)
+const ProductContext = createContext()
+const cart = []
 
-export const CartProvider = (props) => {
-  const [products, setProducts] = useState([])
-  // eslint-disable-next-line react/destructuring-assignment
-  return <CartContext.Provider value={[products, setProducts]}>{props.children}</CartContext.Provider>
+const ProductState = (props) => {
+  const [state, dispatch] = useReducer(ProductReducer, cart)
+
+  const addProductToCart = () => {
+    setTimeout(() => {
+      dispatch(ADD_PRODUCT)
+    }, 700)
+  }
+
+  const removeProductFromCart = () => {
+    setTimeout(() => {
+      dispatch(REMOVE_PRODUCT)
+    }, 700)
+  }
+
+  return (
+    <ProductContext.Provider
+      value={{
+        state,
+        cart: state.cart,
+        addProductToCart,
+        removeProductFromCart,
+      }}
+    >
+      {
+        //  eslint-disable-next-line react/destructuring-assignment
+        props.children
+      }
+    </ProductContext.Provider>
+  )
 }
+export default ProductState
