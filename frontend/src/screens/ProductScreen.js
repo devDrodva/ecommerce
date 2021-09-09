@@ -51,8 +51,8 @@ const ProductScreen = ({ match, history }) => {
                             <p>
                                 Status:
                                 <span>
-                  {product.countInStock > 0 ? "In Stock" : "Out of Stock"}
-                </span>
+                                    {product.countInStock > 0 ? "In Stock" : "Out of Stock"}
+                                </span>
                             </p>
                             <p>
                                 Qty

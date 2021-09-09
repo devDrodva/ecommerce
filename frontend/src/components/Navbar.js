@@ -21,8 +21,8 @@ const Navbar = ({ click }) => {
                     <Link to="/cart" className="cart_link">
                         <i className="fas fa-shopping-cart"></i>
                         <span>
-              Cart <span className="cartlogo_badge">{getCartCount()}</span>
-            </span>
+                            Cart <span className="cartlogo_badge">{getCartCount()}</span>
+                        </span>
                     </Link>
                 </li>
             </ul>
