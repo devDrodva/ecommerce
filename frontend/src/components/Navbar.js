@@ -1,12 +1,19 @@
-import './Navbar.css'
-import {Link} from "react-router-dom";
+import "./Navbar.css";
+import { Link } from "react-router-dom";
+import { useSelector } from "react-redux";
 
+const Navbar = ({ click }) => {
+    const cart = useSelector((state) => state.cart);
+    const { cartItems } = cart;
 
-const Navbar = ({click}) => {
+    const getCartCount = () => {
+        return cartItems.reduce((qty, item) => Number(item.qty) + qty, 0);
+    };
+
     return (
         <nav className="navbar">
             <div className="navbar_logo">
-                <h2>Mern Shopping Cart</h2>
+                <h2>MERN Shopping Cart</h2>
             </div>
 
             <ul className="navbar_links">
@@ -14,9 +21,8 @@ const Navbar = ({click}) => {
                     <Link to="/cart" className="cart_link">
                         <i className="fas fa-shopping-cart"></i>
                         <span>
-                            Cart
-                            <span className="cartlogo_badge">0</span>
-                        </span>
+              Cart <span className="cartlogo_badge">{getCartCount()}</span>
+            </span>
                     </Link>
                 </li>
                 <li>
@@ -30,7 +36,7 @@ const Navbar = ({click}) => {
                 <div></div>
             </div>
         </nav>
-    )
-}
+    );
+};
 
-export default Navbar
+export default Navbar;
