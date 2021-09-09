@@ -1,21 +1,25 @@
-import './Product.css'
-import {Link} from "react-router-dom";
 
-const Product = () => {
+import "./Product.css";
+import { Link } from "react-router-dom";
+
+const Product = ({ imageUrl, description, price, name, productId }) => {
     return (
         <div className="product">
-            <img src="https://www.maxpixel.net/static/photo/2x/Winter-Fabric-Textile-Fashion-Knitting-Clothing-3831821.jpg" alt="product name"/>
+            <img src={imageUrl} alt={name} />
 
             <div className="product_info">
-                <p className="info_name">Product 1</p>
-                <p className="info_description">
-                    Texto cualquiere para hacer campo mientras realmente se coloca lo que se necesita.
-                </p>
-                <p className="info_price">$39.99</p>
-                <Link to={`/product/${1111}`} className={"info_button"}>View</Link>
+                <p className="info_name">{name}</p>
+
+                <p className="info_description">{description.substring(0, 100)}...</p>
+
+                <p className="info_price">${price}</p>
+
+                <Link to={`/product/${productId}`} className="info_button">
+                    View
+                </Link>
             </div>
         </div>
-    )
-}
+    );
+};
 
-export default Product
+export default Product;
