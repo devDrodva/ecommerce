@@ -13,7 +13,7 @@ const Navbar = ({ click }) => {
     return (
         <nav className="navbar">
             <div className="navbar_logo">
-                <Link to="/">MERN Shopping Cart</Link>
+                <Link to="/">Mistic</Link>
             </div>
 
             <ul className="navbar_links">
@@ -24,6 +24,9 @@ const Navbar = ({ click }) => {
                             Cart <span className="cartlogo_badge">{getCartCount()}</span>
                         </span>
                     </Link>
+                </li>
+                <li>
+                    <Link to="/">Shop</Link>
                 </li>
             </ul>
 
